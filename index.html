@@ -10,7 +10,116 @@
             type="image/x-icon"
         />
         <link rel="stylesheet" href="app.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
         <script defer src="./main.js"></script>
     </head>
-    <body></body>
+    <body>
+        <main>
+            <h1 class="hidden">Splitter Tip Calculator App</h1>
+            <img class="logo" src="./images/logo.svg" alt="logo" />
+
+            <section class="tip">
+                <div class="tip__bill">
+                    <label class="tip__bill-label" for="bill">Bill</label>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <input
+                        class="tip__bill-input"
+                        type="text"
+                        name="bill"
+                        placeholder="0"
+                    />
+                </div>
+
+                <fieldset class="tip__selection">
+                    <label class="tip__selection-label" for="select"
+                        >Select Tip %</label
+                    >
+
+                    <label class="tip__selection-number" for="5">5%</label>
+                    <input
+                        class="tip__selection-radio"
+                        type="radio"
+                        name="5"
+                        id=""
+                    />
+
+                    <label class="tip__selection-number" for="10">10%</label>
+                    <input
+                        class="tip__selection-radio"
+                        type="radio"
+                        name="10"
+                        id=""
+                    />
+
+                    <label class="tip__selection-number" for="15">15%</label>
+                    <input
+                        class="tip__selection-radio"
+                        type="radio"
+                        name="15"
+                        id=""
+                    />
+
+                    <label class="tip__selection-number" for="25">25%</label>
+                    <input
+                        class="tip__selection-radio"
+                        type="radio"
+                        name="25"
+                        id=""
+                    />
+
+                    <label class="tip__selection-number" for="50">50%</label>
+                    <input
+                        class="tip__selection-radio"
+                        type="radio"
+                        name="50"
+                        id=""
+                    />
+
+                    <input
+                        class="tip__selection-text-input"
+                        type="text"
+                        name="custom"
+                        id=""
+                        placeholder="Custom"
+                    />
+                </fieldset>
+
+                <div class="tip__people">
+                    <label class="tip__people-label" for="people"
+                        >Number of People</label
+                    >
+                    <input
+                        class="tip__people-input"
+                        type="text"
+                        name="people"
+                        placeholder="0"
+                    />
+                </div>
+
+                <div class="tip__results">
+                    <div class="tip__results-amount">
+                        <p class="tip__results-amount-text">
+                            Tip Amount<span class="tip__results-amount-span">
+                                / person</span
+                            >
+                        </p>
+                        <p class="tip__results-amount-number">$0.00</p>
+                    </div>
+                    <div class="tip__results-total">
+                        <p class="tip__results-total-text">
+                            Tip Amount<span class="tip__results-total-span">
+                                / person</span
+                            >
+                        </p>
+                        <p class="tip__results-total-number">$0.00</p>
+                    </div>
+                    <button class="tip__results-button">Reset</button>
+                </div>
+            </section>
+            <section class="tip__result"></section>
+        </main>
+    </body>
 </html>

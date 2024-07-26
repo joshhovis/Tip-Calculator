@@ -1,1 +1,76 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");/*# sourceMappingURL=app.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+html {
+  display: flex;
+  background-color: #c5e4e7;
+  min-height: 100%;
+  font-family: "Space Mono", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.logo {
+  width: 50%;
+  margin: 0 auto;
+  padding: 3.125rem;
+}
+
+.tip {
+  background-color: white;
+  flex: 1;
+  border-radius: 16px 16px 0 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tip__bill {
+  display: flex;
+  flex-direction: column;
+}
+.tip__bill i {
+  position: absolute;
+}
+.tip__bill-label {
+  font-weight: 600;
+  color: #5e7a7d;
+}
+.tip__bill-input {
+  background: url(./images/icon-dollar.svg) no-repeat left;
+  text-align: right;
+  padding: 14px;
+  background-size: 14px;
+  background-position: 14px;
+  border: none;
+  background-color: #f3f9fa;
+  border-radius: 5px;
+  color: #00474b;
+  font-size: 24px;
+  font-weight: 600;
+  outline: none;
+}
+.tip__bill-input:focus, .tip__bill-input:hover {
+  border: 1px solid #26c2ae;
+  outline: 1px solid #26c2ae;
+}/*# sourceMappingURL=app.css.map */

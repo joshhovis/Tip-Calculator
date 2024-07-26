@@ -1,1 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    border: 0;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+html {
+    display: flex;
+    background-color: #c5e4e7;
+    min-height: 100%;
+    font-family: "Space Mono", sans-serif;
+}
+
+body {
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.logo {
+    width: 50%;
+    margin: 0 auto;
+    padding: 3.125rem;
+}
+
+.tip {
+    background-color: white;
+    flex: 1;
+    border-radius: 16px 16px 0 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__bill {
+        display: flex;
+        flex-direction: column;
+        & i {
+            position: absolute;
+        }
+        &-label {
+            font-weight: 600;
+            color: #5e7a7d;
+        }
+        &-input {
+            background: url(./images/icon-dollar.svg) no-repeat left;
+            text-align: right;
+            padding: 14px;
+            background-size: 14px;
+            background-position: 14px;
+            border: none;
+            background-color: #f3f9fa;
+            border-radius: 5px;
+            color: #00474b;
+            font-size: 24px;
+            font-weight: 600;
+            outline: none;
+
+            &:focus,
+            &:hover {
+                border: 1px solid #26c2ae;
+                outline: 1px solid #26c2ae;
+            }
+        }
+        &-icon {
+        }
+    }
+}
