@@ -14,6 +14,10 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/validator@13.6.0/validator.min.js"
+        ></script>
         <script defer src="./main.js"></script>
     </head>
     <body>
@@ -60,16 +64,19 @@
                             class="tip__selection-custom"
                             type="text"
                             name="custom"
-                            id=""
+                            id="custom"
                             placeholder="Custom"
                         />
                     </div>
                 </div>
 
                 <div class="tip__people">
-                    <label class="tip__people-label" for="people"
-                        >Number of People</label
-                    >
+                    <div class="tip__people-text">
+                        <label class="tip__people-label" for="people"
+                            >Number of People</label
+                        >
+                        <p class="tip__people-error">Can't be zero</p>
+                    </div>
                     <input
                         class="tip__people-input"
                         type="text"

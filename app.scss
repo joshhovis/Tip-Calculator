@@ -78,6 +78,7 @@ main {
             &:hover {
                 border: 1px solid #26c2ae;
                 outline: 1px solid #26c2ae;
+                cursor: pointer;
             }
         }
     }
@@ -88,6 +89,12 @@ main {
         display: flex;
         flex-direction: column;
         gap: 5px;
+
+        & .active {
+            background-color: #9fe8df;
+            color: #00474b;
+            transition: 0.1s ease-in;
+        }
 
         &-item-wrapper {
             display: flex;
@@ -109,12 +116,20 @@ main {
             font-size: 24px;
             font-weight: 600;
             text-align: center;
+            transition: 0.1s ease-out;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #9fe8df;
+                color: #00474b;
+                transition: 0.1s ease-in;
+            }
         }
 
         &-custom {
             border: none;
             text-align: right;
-            background-color: #f3f9fa;
+            background-color: #f3f9fa !important;
             color: #00474b;
             flex: 40%;
             padding-right: 20px;
@@ -124,9 +139,11 @@ main {
             font-weight: 600;
 
             &:focus,
-            &:hover {
+            &:hover,
+            &.active {
                 border: 1px solid #26c2ae;
                 outline: 1px solid #26c2ae;
+                cursor: pointer;
             }
         }
     }
@@ -136,9 +153,20 @@ main {
         flex-direction: column;
         gap: 5px;
 
+        &-text {
+            display: flex;
+            justify-content: space-between;
+        }
+
         &-label {
             color: #5e7a7d;
             font-weight: 600;
+        }
+
+        &-error {
+            font-weight: 600;
+            color: #e17052;
+            display: none;
         }
 
         &-input {
@@ -159,10 +187,11 @@ main {
             &:hover {
                 border: 1px solid #26c2ae;
                 outline: 1px solid #26c2ae;
+                cursor: pointer;
             }
 
             &:invalid {
-                border: 1px solid $vermellion;
+                border: 1px solid #e17052;
             }
         }
     }
@@ -209,6 +238,15 @@ main {
             text-transform: uppercase;
             font-family: "Space Mono", sans-serif;
             border-radius: 5px;
+            transition: 0.1s ease-out;
+
+            &:hover,
+            &:active {
+                background-color: #9fe8df;
+                color: #00474b;
+                cursor: pointer;
+                transition: 0.1s ease-in;
+            }
         }
     }
 }
