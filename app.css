@@ -36,9 +36,9 @@ main {
 }
 
 .logo {
-  width: 60%;
+  width: 45%;
   margin: 0 auto;
-  padding: 3.125rem;
+  padding: 3rem;
 }
 
 .tip {
@@ -46,6 +46,12 @@ main {
   flex: 1;
   border-radius: 16px 16px 0 0;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+.tip__wrapper {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -94,7 +100,7 @@ main {
   gap: 5px;
 }
 .tip__selection .active {
-  background-color: #9fe8df;
+  background-color: #26c2ae;
   color: #00474b;
   transition: 0.1s ease-in;
 }
@@ -189,6 +195,11 @@ main {
   border-radius: 15px;
   padding: 20px;
 }
+.tip__results-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .tip__results-amount, .tip__results-total {
   display: flex;
   justify-content: space-between;
@@ -224,4 +235,95 @@ main {
   color: #00474b;
   cursor: pointer;
   transition: 0.1s ease-in;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo {
+    width: 25%;
+  }
+  .tip__bill, .tip__selection, .tip__people, .tip__results {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: 20%;
+    padding-top: 0;
+  }
+  .tip {
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 40px;
+    gap: 50px;
+  }
+  .tip__wrapper {
+    flex: 1;
+  }
+  .tip__results {
+    flex: 1;
+    padding: 40px;
+    justify-content: space-between;
+  }
+  .tip__results-wrapper {
+    gap: 30px;
+  }
+  .tip__results-amount-text, .tip__results-total-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tip__results-total-number, .tip__results-amount-number {
+    font-size: 48px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .logo {
+    width: 15%;
+  }
+  .tip {
+    width: 75%;
+  }
+  .tip__selection-item-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .tip__selection-item {
+    flex: 30%;
+  }
+  .tip__selection-custom {
+    flex: 30%;
+    max-width: 30%;
+  }
+}
+@media only screen and (min-width: 1880px) {
+  .logo {
+    width: 10%;
+  }
+  .tip {
+    width: 60%;
+  }
+  .tip__selection-custom {
+    max-width: 31%;
+  }
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }/*# sourceMappingURL=app.css.map */
