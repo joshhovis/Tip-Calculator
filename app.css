@@ -55,9 +55,17 @@ main {
   flex-direction: column;
   gap: 5px;
 }
+.tip__bill-text {
+  display: flex;
+  justify-content: space-between;
+}
 .tip__bill-label {
   font-weight: 600;
   color: #5e7a7d;
+}
+.tip__bill--error {
+  font-weight: 600;
+  color: #e17052;
 }
 .tip__bill-input {
   background: url(./images/icon-dollar.svg) no-repeat left;
@@ -146,10 +154,9 @@ main {
   color: #5e7a7d;
   font-weight: 600;
 }
-.tip__people-error {
+.tip__people--error {
   font-weight: 600;
   color: #e17052;
-  display: none;
 }
 .tip__people-input {
   background: url(./images/icon-person.svg) no-repeat left;

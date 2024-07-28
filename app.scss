@@ -56,9 +56,19 @@ main {
         flex-direction: column;
         gap: 5px;
 
+        &-text {
+            display: flex;
+            justify-content: space-between;
+        }
+
         &-label {
             font-weight: 600;
             color: #5e7a7d;
+        }
+
+        &--error {
+            font-weight: 600;
+            color: #e17052;
         }
         &-input {
             background: url(./images/icon-dollar.svg) no-repeat left;
@@ -163,10 +173,9 @@ main {
             font-weight: 600;
         }
 
-        &-error {
+        &--error {
             font-weight: 600;
             color: #e17052;
-            display: none;
         }
 
         &-input {

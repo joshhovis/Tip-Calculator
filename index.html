@@ -27,10 +27,15 @@
 
             <section class="tip">
                 <div class="tip__bill">
-                    <label class="tip__bill-label" for="bill">Bill</label>
+                    <div class="tip__bill-text">
+                        <label class="tip__bill-label" for="bill">Bill</label>
+                        <p class="tip__bill--error" style="display: none">
+                            Can't be zero
+                        </p>
+                    </div>
                     <input
                         class="tip__bill-input"
-                        type="text"
+                        type="number"
                         name="bill"
                         placeholder="0"
                     />
@@ -62,7 +67,7 @@
 
                         <input
                             class="tip__selection-custom"
-                            type="text"
+                            type="number"
                             name="custom"
                             id="custom"
                             placeholder="Custom"
@@ -75,11 +80,13 @@
                         <label class="tip__people-label" for="people"
                             >Number of People</label
                         >
-                        <p class="tip__people-error">Can't be zero</p>
+                        <p class="tip__people--error" style="display: none">
+                            Can't be zero
+                        </p>
                     </div>
                     <input
                         class="tip__people-input"
-                        type="text"
+                        type="number"
                         name="people"
                         placeholder="0"
                     />
