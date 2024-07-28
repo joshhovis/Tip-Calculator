@@ -23,9 +23,11 @@ html {
     background-color: #c5e4e7;
     min-height: 100%;
     font-family: "Space Mono", sans-serif;
+    min-width: 100%;
 }
 
 body {
+    min-width: 100%;
 }
 
 main {
@@ -35,7 +37,7 @@ main {
 }
 
 .logo {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     padding: 3.125rem;
 }
@@ -44,7 +46,7 @@ main {
     background-color: white;
     flex: 1;
     border-radius: 16px 16px 0 0;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -52,9 +54,8 @@ main {
     &__bill {
         display: flex;
         flex-direction: column;
-        & i {
-            position: absolute;
-        }
+        gap: 5px;
+
         &-label {
             font-weight: 600;
             color: #5e7a7d;
@@ -79,7 +80,45 @@ main {
                 outline: 1px solid #26c2ae;
             }
         }
-        &-icon {
+    }
+
+    &__selection {
+        outline: none;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        &-item-wrapper {
+            // display: grid;
+            // grid-template-columns: repeat(2, 1fr);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        &-label {
+            font-weight: 600;
+            color: #5e7a7d;
+        }
+
+        &-item {
+            padding: 10px;
+            background-color: #00474b;
+            color: white;
+            border-radius: 5px;
+            flex: 40%;
+        }
+
+        &-custom {
+            border: none;
+            background-color: #f3f9fa;
+            color: #547878;
+            text-align: right;
+            font-size: 24px;
+            padding-right: 20px;
+            flex: 40%;
         }
     }
 }

@@ -22,6 +22,11 @@ html {
   background-color: #c5e4e7;
   min-height: 100%;
   font-family: "Space Mono", sans-serif;
+  min-width: 100%;
+}
+
+body {
+  min-width: 100%;
 }
 
 main {
@@ -31,7 +36,7 @@ main {
 }
 
 .logo {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   padding: 3.125rem;
 }
@@ -40,7 +45,7 @@ main {
   background-color: white;
   flex: 1;
   border-radius: 16px 16px 0 0;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -48,9 +53,7 @@ main {
 .tip__bill {
   display: flex;
   flex-direction: column;
-}
-.tip__bill i {
-  position: absolute;
+  gap: 5px;
 }
 .tip__bill-label {
   font-weight: 600;
@@ -73,4 +76,37 @@ main {
 .tip__bill-input:focus, .tip__bill-input:hover {
   border: 1px solid #26c2ae;
   outline: 1px solid #26c2ae;
+}
+.tip__selection {
+  outline: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.tip__selection-item-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.tip__selection-label {
+  font-weight: 600;
+  color: #5e7a7d;
+}
+.tip__selection-item {
+  padding: 10px;
+  background-color: #00474b;
+  color: white;
+  border-radius: 5px;
+  flex: 40%;
+}
+.tip__selection-custom {
+  border: none;
+  background-color: #f3f9fa;
+  color: #547878;
+  text-align: right;
+  font-size: 24px;
+  padding-right: 20px;
+  flex: 40%;
 }/*# sourceMappingURL=app.css.map */
