@@ -65,10 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
             resultAmount.innerText = "$0.00";
             resultTotal.innerText = "$0.00";
 
-            if (
-                !validator.isInt(peopleInput.value, { min: 1 }) ||
-                !validator.isFloat(billInput.value, { min: 0.01 })
-            ) {
+            if (!validator.isInt(peopleInput.value, { min: 1 })) {
                 peopleInput.style.border = "1px solid #E17052";
                 peopleInput.style.outline = "1px solid #E17052";
                 peopleError.style.display = "inline";
@@ -89,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
         peopleInput.style.outline = "";
         peopleError.style.display = "none";
 
-        if (!selectedTip || isNaN(selectedTip)) {
+        if (selectedTip === null || isNaN(selectedTip)) {
             resultAmount.innerText = "$0.00";
             resultTotal.innerText = "$0.00";
             return;
