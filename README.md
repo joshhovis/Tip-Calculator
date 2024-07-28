@@ -1,6 +1,6 @@
 # Frontend Mentor - Tip Calculator solution
 
-This is a solution to the [Newsletter sign-up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX/hub).
+This is a solution to the [Tip Calculator challenge on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-tip-calculator---vanilla-js-bhTi8g244g).
 
 ### Screenshot
 
