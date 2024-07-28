@@ -22,6 +22,7 @@ This is a solution to the [Newsletter sign-up form challenge on Frontend Mentor]
 -   ValidatorJS Library
 -   Flexbox
 -   Mobile-first workflow
+-   BEM Class Methodology
 
 ## Author
 
